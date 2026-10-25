@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Local model/reference caches and autonomous discovery indexes
+.studio/
+
+# Runtime databases and uploads are user data, not source artifacts
+database/*
+!database/.gitkeep
+ready_to_upload/*
+!ready_to_upload/.gitkeep
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Large local models and media should never enter Git
+*.gguf
+*.safetensors
+*.ckpt
+*.onnx
+*.pth

@@ -1,0 +1,21 @@
+# Optional local AI backends. Install only what your hardware supports.
+-r requirements.txt
+
+# Voice-memo transcription and measured word-level captions
+faster-whisper>=1.0,<2
+
+# Zero-shot multilingual voice cloning (large model; consent required)
+TTS>=0.22,<0.25
+
+# Additional system-speech fallback
+pyttsx3>=2.90,<3
+
+# Local diffusion B-roll (install a PyTorch build suitable for your CPU/GPU)
+torch>=2.2
+# Pillow is a diffusers dependency and is used for image anchors.
+diffusers>=0.27,<1
+transformers>=4.40,<5
+accelerate>=0.28,<2
+
+# Offline neural translation; install language packages separately.
+argostranslate>=1.9,<2
